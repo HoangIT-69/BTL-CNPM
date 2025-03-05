@@ -1,0 +1,9 @@
+@Service
+@RequiredArgsConstructor
+public class TicketService {
+    private final TicketRepository ticketRepository;
+
+    public List<Ticket> getAllTickets() {
+        return ticketRepository.findAll();
+    }
+}

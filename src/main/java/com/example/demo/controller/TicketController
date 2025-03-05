@@ -1,0 +1,11 @@
+@RestController
+@RequestMapping("/api/tickets")
+@RequiredArgsConstructor
+public class TicketController {
+    private final TicketService ticketService;
+
+    @GetMapping
+    public List<Ticket> getTickets() {
+        return ticketService.getAllTickets();
+    }
+}

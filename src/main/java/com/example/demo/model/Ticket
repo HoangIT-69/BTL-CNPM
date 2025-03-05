@@ -1,0 +1,12 @@
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Ticket {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String movieName;
+    private double price;
+    private String seatNumber;
+}
